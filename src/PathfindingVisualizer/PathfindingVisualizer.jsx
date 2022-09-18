@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Node from './Node/Node';
 import {dijkstra} from '../algorithms/dijkstra';
-import {AStar} from '../algorithms/aStar';
-import {dfs} from '../algorithms/dfs';
-import {bfs} from '../algorithms/bfs';
 
 import './PathfindingVisualizer.css';
 
@@ -323,15 +320,6 @@ export default class PathfindingVisualizer extends Component {
       switch (algo) {
         case 'Dijkstra':
           visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
-          break;
-        case 'AStar':
-          visitedNodesInOrder = AStar(grid, startNode, finishNode);
-          break;
-        case 'BFS':
-          visitedNodesInOrder = bfs(grid, startNode, finishNode);
-          break;
-        case 'DFS':
-          visitedNodesInOrder = dfs(grid, startNode, finishNode);
           break;
         default:
           // should never get here
