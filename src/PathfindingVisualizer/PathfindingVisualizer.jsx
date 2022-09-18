@@ -416,7 +416,7 @@ export default class PathfindingVisualizer extends Component {
                 <a
                   target="_blank"
                   className="nav-link"
-                  href="https://github.com/pankaj-889/Shortest-find-finder">
+                  href="https://github.com/pankaj-889/Shortest-Path-finder">
                   {' '}
                   PathFinder Visualizer code{' '}
                 </a>
